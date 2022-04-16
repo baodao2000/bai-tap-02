@@ -1,0 +1,216 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "UTM Davida";
+    font-weight: 400;
+    src: url(../font/00074-UTM-Davida.ttf) format('truetype'),
+        url(../font/00074-UTM-Davida.ttf) format('opentype');
+}
+
+@font-face {
+    font-family: "SVN aptima";
+    font-weight: 400;
+    src: url(../font/SVN-Aptima.ttf) format('truetype'),
+        url(../font/SVN-Aptima.ttf) format('opentype');
+}
+
+.title01 {
+    font-family: "UTM Davida";
+    font-size: 2.5rem;
+    color: #F4D58D;
+}
+
+a {
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 0;
+}
+
+a:hover {
+    color: #708D81;
+}
+
+a:active {
+    color: #708D81;
+}
+
+.navbar {
+    background-color: #001427;
+    display: grid;
+    grid-template-columns: 3fr 5fr 1fr;
+    position: absolute;
+    padding-top: 2.5rem;
+    column-gap: 2rem;
+    top: 0;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    align-items: center;
+}
+
+.navbar-logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.navbar-menu {
+    padding-top: 1rem;
+}
+
+.navbar-menu li {
+    display: inline-block;
+    list-style: none
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #F4D58D;
+    font-weight: 400;
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+
+.navbar-cart {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-cart i {
+    padding: 0 1rem;
+    font-size: 2rem;
+    color: #F4D58D;
+}
+
+.container-lage {
+    display: grid;
+    height: max-content;
+    background-color: #001427;
+    padding-top: 10.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 6.5rem;
+}
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20rem;
+}
+.header-left h2 {
+    font-family: "UTM Davida";
+    font-size: 2.5rem;
+    color: #F4D58D;
+}
+.header-left .body01 {
+    color: #fff;
+}
+.header-right {
+    position: relative;
+}
+.header-right h1 {
+    font-family: "UTM Davida";
+    color: rgba(255, 255, 255, 1);
+    font-size: 5.5rem;
+    opacity: 0.1;
+}
+.elipse {
+    position: absolute;
+    top: -1rem;
+    right: 7rem;
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+    background-color: rgba(124, 8, 2, 1)
+}
+.header-ritgh-img {
+    position: absolute;
+    top: 4rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content {
+    margin-top: 4rem;
+}
+.content h2 {
+    font-family: "UTM Davida";
+    font-size: 2.5rem;
+    color: #F4D58D;
+    text-align: center;
+}
+.member-list {
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4rem;
+    align-items: center;
+}
+.member-list p {
+    font-family: "UTM Davida";
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+.mid {
+    margin-top: 1rem;
+}
+.top {
+    margin-top: 6rem;
+}
+.icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 1.5rem
+}
+.icon i {
+    font-size: 3rem;
+    color: rgba(244, 213, 141, 1);
+    opacity: 0.6;
+}
+.footer {
+    background-color: #1C2A3D;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+.footer-menu {
+    padding-top: 2rem;
+}
+
+.footer-menu li {
+    display: inline-block;
+    list-style: none
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #F4D58D;
+    font-weight: 400;
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+.footer-icon img {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.footer-content {
+    width: 24rem;
+    margin-top: 2rem;
+}
+.footer-content .title02{
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center; 
+}
