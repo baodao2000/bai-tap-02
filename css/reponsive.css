@@ -1,0 +1,140 @@
+@media screen and (max-width: 1024px) {
+    * {
+        font-family: "Montserrat", sans-serif;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+
+    @font-face {
+        font-family: "UTM Davida";
+        font-weight: 400;
+        src: url(../font/00074-UTM-Davida.ttf) format('truetype'),
+            url(../font/00074-UTM-Davida.ttf) format('opentype');
+    }
+
+    @font-face {
+        font-family: "SVN aptima";
+        font-weight: 400;
+        src: url(../font/SVN-Aptima.ttf) format('truetype'),
+            url(../font/SVN-Aptima.ttf) format('opentype');
+    }
+
+    .small-button .btn-outline-primary {
+        font-size: 1rem;
+        border-width: 1px;
+        padding: 0.375rem 0.75rem;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    * {
+        font-family: "Montserrat", sans-serif;
+        box-sizing: border-box;
+        font-size: 8px;
+    }
+
+    @font-face {
+        font-family: "UTM Davida";
+        font-weight: 400;
+        src: url(../font/00074-UTM-Davida.ttf) format('truetype'),
+            url(../font/00074-UTM-Davida.ttf) format('opentype');
+    }
+
+    @font-face {
+        font-family: "SVN aptima";
+        font-weight: 400;
+        src: url(../font/SVN-Aptima.ttf) format('truetype'),
+            url(../font/SVN-Aptima.ttf) format('opentype');
+    }
+
+    .navbar-logo {
+        padding-right: 2rem;
+        padding-top: 25px;
+        z-index: 99;
+        display: flex;
+        justify-content: flex-end;
+        background-color: #001427;
+        position: fixed;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .sidebar .open i {
+        display: block;
+    }
+
+    .carousel-item .card {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .carousel-item .card .text {
+        padding: 0 8rem;
+    }
+
+    .carousel-indicators {
+        top: 43rem;
+    }
+
+    .small-button .btn-outline-primary {
+        font-size: 1rem;
+        border-width: 1px;
+        padding: 0.375rem 0.75rem;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+        padding: 2rem 3rem;
+    }
+
+    .content .text {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .content-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .content .buttons-group {
+        justify-content: center;
+    }
+
+    .showall01 {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 3rem;
+    }
+
+    .showall01 .text {
+        margin-top: 2rem;
+    }
+
+    .showall02 {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 2rem 3rem;
+    }
+
+    .hidden {
+        bottom: 0;
+    }
+
+    .content02 {
+        flex-direction: column;
+        padding: 2rem 3rem;
+    }
+
+    .content02 .text {
+        text-align: center;
+    }
+
+    .content02 .buttons-group {
+        justify-content: center;
+    }
+}
