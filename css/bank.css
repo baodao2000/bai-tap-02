@@ -1,31 +1,35 @@
 * {
-    font-family: "Montserrat",sans-serif;
+    font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
 }
 
-@font-face{
+@font-face {
     font-family: "UTM Davida";
     font-weight: 400;
     src: url(../font/00074-UTM-Davida.ttf) format('truetype'),
-    url(../font/00074-UTM-Davida.ttf) format('opentype');
+        url(../font/00074-UTM-Davida.ttf) format('opentype');
 }
-@font-face{
+
+@font-face {
     font-family: "SVN aptima";
     font-weight: 400;
     src: url(../font/SVN-Aptima.ttf) format('truetype'),
-    url(../font/SVN-Aptima.ttf) format('opentype');
+        url(../font/SVN-Aptima.ttf) format('opentype');
 }
+
 .body02 {
     font-size: 0.8125rem;
     color: #fff;
     font-weight: 400;
 }
+
 .title01 {
     font-family: "UTM Davida";
     font-size: 2.5rem;
     color: #F4D58D;
     text-align: center;
 }
+
 a {
     list-style: none;
     color: #fff;
@@ -33,36 +37,43 @@ a {
     display: block;
     padding: 0.5rem 0;
 }
+
 a:hover {
     color: #708D81;
 }
+
 a:active {
     color: #708D81;
 }
+
 .navbar {
     background-color: #001427;
     display: grid;
     grid-template-columns: 3fr 5fr 1fr;
-    position: absolute;
+    position: fixed;
     padding-top: 2.5rem;
     column-gap: 2rem;
     top: 0;
     padding-right: 3rem;
     padding-left: 3rem;
     align-items: center;
+    z-index: 3;
 }
+
 .navbar-logo {
-    max-width: 100%;
-    max-height: 100%;
-    width: 66px;
+    width: 100%;
+    object-fit: cover;
 }
+
 .navbar-menu {
     padding-top: 1rem;
 }
+
 .navbar-menu li {
     display: inline-block;
     list-style: none
 }
+
 .navbar-menu a {
     text-decoration: none;
     color: #F4D58D;
@@ -72,15 +83,123 @@ a:active {
     padding-right: 1rem;
     text-align: center;
 }
+
 .navbar-cart {
     display: flex;
     flex-direction: row;
 }
+
 .navbar-cart i {
     padding: 0 1rem;
     font-size: 2rem;
     color: #F4D58D;
 }
+
+.sidebar-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #001427;
+}
+
+.sidebar .menu {
+    height: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: auto;
+    background-color: #001427;
+    transition: 0.5s;
+    transform: translateX(-100%);
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+}
+
+.menu .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 2rem;
+}
+
+.menu .logo p {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.sidebar .logo a {
+    padding: 15px 25px;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    /*margin-left: 5px*/
+}
+
+.sidebar .logo a img {
+    max-width: 140px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    color: #fff;
+    padding-left: 4rem;
+}
+
+.sidebar ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    transition: 0.3s;
+    /*text-align: center;*/
+    list-style: none;
+}
+
+.sidebar ul li:hover {
+    padding-left: 35px;
+    background-color: #445665;
+}
+
+.sidebar ul li a {
+    display: block;
+    color: #F4D58D;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.sidebar #open {
+    display: none;
+}
+
+.sidebar label {
+    display: block;
+}
+
+.sidebar .open i {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #F4D58D;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    left: 1.5rem;
+}
+
+#open:checked~.menu {
+    transition: 0.5s;
+    transform: translateX(0);
+}
+
+#open:checked~.open i {
+    transition: 0.5s;
+    position: fixed;
+    top: 0;
+}
+
 .container-lage {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
@@ -89,79 +208,97 @@ a:active {
     padding-top: 10.5rem;
     padding-left: 3rem;
     padding-right: 3rem;
-    padding-bottom: 6.5rem;;
+    padding-bottom: 6.5rem;
+    ;
     column-gap: 6rem;
 }
+
 .container-left {
     padding-top: 3rem;
     padding-right: 10rem;
 }
+
 .container-left .name {
     margin-top: 2rem;
 }
+
 .container-left .title02 {
     font-size: 3rem;
     font-weight: 900;
     color: #fff;
 }
+
 .container-left-items {
     padding-left: 2rem;
     font-size: 1rem;
     font-weight: 700;
 }
+
 .container-left-items .active {
     color: #708D81;
 }
+
 .name {
     margin-top: 1.5rem;
 }
+
 .container-right {
     padding: 0 4rem;
 }
+
 .container-right .body01 {
     font-size: 1.5rem;
     color: #fff;
     padding-bottom: 0.5rem;
 }
+
 .input-group {
     border: 3px solid #F4D58D;
     border-radius: 15px;
     margin-bottom: 1.5rem;
 }
-.form-control{
+
+.form-control {
     background-color: #001427;
     border: none;
     border-radius: 15px;
     outline: none;
+    padding: 6px 12px;
 }
-.form-control:focus{
+
+.form-control:focus {
     color: #fff;
     border-color: #708D81;
     box-shadow: none;
     background-color: #001427;
 }
-.input-group-text{
+
+.input-group-text {
     background-color: transparent;
     color: #F4D58D;
-    font-size: 1.5rem;
+    font-size:  24px;
     border: none;
     outline: none;
 }
-.input-group:focus{
-    border-color:#708D81;
+
+.input-group:focus {
+    border-color: #708D81;
     box-shadow: none;
 }
+
 .date {
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: 2rem;
 }
-.input-select{
+
+.input-select {
     border: 3px solid #F4D58D;
     border-radius: 15px;
     margin-bottom: 1.5rem;
 }
-.form-select{
+
+.form-select {
     background-color: #001427;
     border: none;
     border-radius: 15px;
@@ -170,12 +307,14 @@ a:active {
     padding: 0.75rem;
     background-image: url(../image/icon\ \(2\).png);
 }
-.form-select:focus{
+
+.form-select:focus {
     color: #fff;
     border-color: #708D81;
     box-shadow: none;
     background-color: #001427;
 }
+
 .button-group {
     display: flex;
     position: absolute;
@@ -183,6 +322,7 @@ a:active {
     justify-content: flex-end;
     column-gap: 1.5rem;
 }
+
 .small-button .btn-outline-primary {
     margin-top: 1rem;
     color: #fff;
@@ -192,6 +332,7 @@ a:active {
     font-size: 1.5rem;
     padding: 0.375rem 2rem;
 }
+
 .btn-outline-primary:hover {
     background-color: #001427;
 }

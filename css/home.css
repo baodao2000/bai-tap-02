@@ -19,7 +19,7 @@
 
 .title01 {
     font-family: "UTM Davida";
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #F4D58D;
 }
 
@@ -55,6 +55,7 @@ a:active {
     padding-left: 3rem;
     align-items: center;
     z-index: 3;
+    width: 100%;
 }
 
 .navbar-logo {
@@ -163,12 +164,15 @@ a:active {
     font-weight: bold;
     font-size: 2rem;
 }
+
 .sidebar #open {
     display: none;
 }
+
 .sidebar label {
     display: block;
 }
+
 .sidebar .open i {
     display: none;
     font-size: 25px;
@@ -182,8 +186,6 @@ a:active {
     left: 0;
     left: 1.5rem;
 }
-
-
 
 #open:checked~.menu {
     transition: 0.5s;
@@ -426,13 +428,15 @@ a:active {
     border: 0;
     bottom: 0;
 }
+
 .swiper {
-    padding-top:  2rem;
+    padding-top: 2rem;
     width: 100%;
     height: 100%;
     background-color: #001427;
     border: 0;
 }
+
 .swiper .title01 {
     text-align: center;
 }
@@ -440,7 +444,8 @@ a:active {
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-
+    width: 100%;
+    height: 100%;
     /* Center slide text vertically */
     display: flex;
     -webkit-box-pack: center;
@@ -451,7 +456,9 @@ a:active {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    margin-right: 0;
+    padding-right: 6rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
 }
 
 .swiper-slide img {
@@ -462,10 +469,6 @@ a:active {
 }
 
 :root {
-    --swiper-navigation-size: 1.5rem;
+    --swiper-navigation-size: 2.5rem;
     --swiper-theme-color: #F4D58D;
-}
-
-.swiper-wrapper {
-    padding: 0 3rem;
 }

@@ -21,16 +21,14 @@
     font-weight: 400;
 }
 .container-fluid {
-    position: relative;
-    width: 100%;
-    height: 100%;
+    width: max-content;
+    height: max-content;
     padding: 0;
     background-image: url(../image/geraldine-lewa-N_Z91Evs_oM-unsplash\ 1.png);
 }
 .navbar {
     display: grid;
     grid-template-columns: 3fr 5fr 1fr;
-    position: fixed;
     padding-top: 2.5rem;
     column-gap: 2rem;
     top: 0;
@@ -73,7 +71,6 @@
 
 .name {
     text-align: center;
-    width: 100%;
 }
 .name h1 {
     font-family: "UTM Davida";

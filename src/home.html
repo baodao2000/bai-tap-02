@@ -306,11 +306,10 @@
     <div class="swiper mySwiper">
         <p class="title01">hình ảnh</p>
         <div class="swiper-wrapper">
-            <div class="swiper-slide"> <img src="../image/Rectangle 45.png" alt="..."></div>
-            <div class="swiper-slide"> <img src="../image/Rectangle 45.png" alt="..."></div>
-            <div class="swiper-slide"> <img src="../image/Rectangle 45.png" alt="..."></div>
-            <div class="swiper-slide"> <img src="../image/Rectangle 45.png" alt="..."></div>
-            <div class="swiper-slide"> <img src="../image/Rectangle 45.png" alt="..."></div>
+            <div class="swiper-slide" style="width: 250px;"> <img src="../image/Rectangle 45.png" alt="..."></div>
+            <div class="swiper-slide" style="width: 250px;"> <img src="../image/Rectangle 45.png" alt="..."></div>
+            <div class="swiper-slide" style="width: 250px;"> <img src="../image/Rectangle 45.png" alt="..."></div>
+            <div class="swiper-slide" style="width: 250px;"> <img src="../image/Rectangle 45.png" alt="..."></div>
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
@@ -366,11 +365,22 @@
 <script>
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 4,
-        spaceBetween: 30,
+        spaceBetween: 20,
         loop: true,
         autoplay: {
             delay: 2500,
             disableOnInteraction: false,
+        },
+        breakpoints: {
+            375: {
+                width: 375,
+                slidesPerView: 1,
+            },
+            1024: {
+                width: 1024,
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
         },
         pagination: {
             el: ".swiper-pagination",

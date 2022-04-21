@@ -38,26 +38,30 @@ a:active {
     background-color: #001427;
     display: grid;
     grid-template-columns: 3fr 5fr 1fr;
-    position: absolute;
+    position: fixed;
     padding-top: 2.5rem;
     column-gap: 2rem;
     top: 0;
     padding-right: 3rem;
     padding-left: 3rem;
     align-items: center;
+    z-index: 3;
 }
+
 .navbar-logo {
-    max-width: 100%;
-    max-height: 100%;
-    width: 66px;
+    width: 100%;
+    object-fit: cover;
 }
+
 .navbar-menu {
     padding-top: 1rem;
 }
+
 .navbar-menu li {
     display: inline-block;
     list-style: none
 }
+
 .navbar-menu a {
     text-decoration: none;
     color: #F4D58D;
@@ -67,20 +71,127 @@ a:active {
     padding-right: 1rem;
     text-align: center;
 }
+
 .navbar-cart {
     display: flex;
     flex-direction: row;
 }
+
 .navbar-cart i {
     padding: 0 1rem;
     font-size: 2rem;
     color: #F4D58D;
 }
+
+.sidebar-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #001427;
+}
+
+.sidebar .menu {
+    height: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: auto;
+    background-color: #001427;
+    transition: 0.5s;
+    transform: translateX(-100%);
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+}
+
+.menu .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 2rem;
+}
+
+.menu .logo p {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.sidebar .logo a {
+    padding: 15px 25px;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    /*margin-left: 5px*/
+}
+
+.sidebar .logo a img {
+    max-width: 140px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    color: #fff;
+    padding-left: 4rem;
+}
+
+.sidebar ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    transition: 0.3s;
+    /*text-align: center;*/
+    list-style: none;
+}
+
+.sidebar ul li:hover {
+    padding-left: 35px;
+    background-color: #445665;
+}
+
+.sidebar ul li a {
+    display: block;
+    color: #F4D58D;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.sidebar #open {
+    display: none;
+}
+
+.sidebar label {
+    display: block;
+}
+
+.sidebar .open i {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #F4D58D;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    left: 1.5rem;
+}
+
+#open:checked~.menu {
+    transition: 0.5s;
+    transform: translateX(0);
+}
+
+#open:checked~.open i {
+    transition: 0.5s;
+    position: fixed;
+    top: 0;
+}
 .container-lage {
     display: grid;
     height: max-content;
     background-color: #001427;
-    padding-top: 10.5rem;
+    padding-top: 6.5rem;
     padding-left: 3rem;
     padding-right: 3rem;
     padding-bottom: 6.5rem;;
@@ -165,11 +276,9 @@ a:active {
     flex-direction: row;
     background-color: #F4D58D;
     border-radius: 2rem 2rem 0 0;
-    margin: 0 3rem;
     padding: 1.5rem;
-    position: fixed;
     bottom: 0;
-    width: 87%;
+    width: 100%;
     max-width: 100%;
     column-gap: 3rem;
     justify-content: space-around;
