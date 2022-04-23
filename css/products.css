@@ -97,10 +97,7 @@ a:active {
 }
 
 .sidebar-logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    background-color: #001427;
+    display: none;
 }
 
 .sidebar .menu {
@@ -208,7 +205,7 @@ a:active {
     left: 0;
     top: 0;
     width: auto;
-    background-color: #708D81;
+    background-color: rgba(255, 255, 255, 0.2);
     transition: 0.5s;
     transform: translateX(-100%);
     border-radius: 0 30px 30px 0;
@@ -263,23 +260,28 @@ a:active {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
 }
+
 .sidebar-menu .form-check-label {
     font-size: 1rem;
     font-weight: bold;
 }
+
 .sidebar-menu .form-check-input:checked[type=checkbox] {
     background-color: #fff;
     border-color: rgba(255, 255, 255, 0.2);
     background-image: url(../image/icon\ \(3\).png)
 }
+
 .sidebar-menu .form-check-input:focus {
     outline: none;
     box-shadow: none;
     border-color: rgba(255, 255, 255, 0.2);
 }
+
 .sidebar-menu .form-check .form-check-input {
     float: none;
 }
+
 .sidebar-menu ul li:hover {
     padding-left: 35px;
     background-color: #445665;
@@ -295,6 +297,20 @@ a:active {
     display: none;
 }
 
+.sidebar-menu .open2-mobile i {
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 25px;
+    color: #F4D58D;
+    z-index: 4;
+    top: 0;
+    position: absolute;
+    left: 0;
+    margin-top: 8rem;
+    display: none;
+    padding: 1rem;
+}
+
 .sidebar-menu .open2 i {
     font-size: 25px;
     cursor: pointer;
@@ -307,9 +323,11 @@ a:active {
     left: 1.5rem;
     margin-top: 4rem;
 }
+
 .list-price ul {
     list-style: none;
 }
+
 #open2:checked~.menu2 {
     transition: 0.5s;
     transform: translateX(0);
@@ -321,24 +339,21 @@ a:active {
     top: 0;
 }
 
+#open2:checked~.open2-mobile i {
+    transition: 0.5s;
+    position: absolute;
+    top: 0;
+}
+
 .container-lage {
     height: max-content;
     position: relative;
     background-color: #001427;
-    padding-top: 10.5rem;
+    padding-top: 6.5rem;
     padding-left: 3rem;
     padding-right: 3rem;
     padding-bottom: 6.5rem;
     column-gap: 6rem;
-}
-
-.carousel-item .card {
-    flex-direction: row;
-    align-items: center;
-    background-color: #001427;
-    border: 0;
-    column-gap: 4rem;
-    padding-right: 5rem;
 }
 
 .card-items {
@@ -378,44 +393,6 @@ a:active {
 
 .btn-outline-primary:hover {
     background-color: #001427;
-}
-
-.carousel-indicators {
-    top: 20rem;
-}
-
-.carousel-indicators [data-bs-target] {
-    background-color: #F4D58D;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-}
-
-.carousel-control-next,
-.carousel-control-prev {
-    opacity: 1;
-}
-
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-    width: 4rem;
-    height: 4rem;
-}
-
-.carousel-control-next-icon {
-    background-image: url(../image/icon.svg);
-}
-
-.carousel-control-prev-icon {
-    background-image: url(../image/icon\ \(2\).svg);
-}
-
-.carousel-control-prev {
-    justify-content: flex-start
-}
-
-.carousel-control-next {
-    justify-content: flex-end
 }
 
 .price {
@@ -491,6 +468,7 @@ a:active {
     flex-direction: row;
     align-items: center;
 }
+
 .swiper {
     padding-top: 2rem;
     width: 100%;
@@ -518,14 +496,16 @@ a:active {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    padding-right: 6rem;
     padding-bottom: 2rem;
-    padding-left: 3rem;
+    padding-right: 4rem;
+    padding-left: 2rem;
 }
+
 :root {
     --swiper-navigation-size: 2.5rem;
     --swiper-theme-color: #F4D58D;
 }
+
 .swiper-slide img {
     display: block;
     width: 100%;

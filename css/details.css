@@ -90,10 +90,7 @@ a:active {
 }
 
 .sidebar-logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    background-color: #001427;
+    display: none;
 }
 
 .sidebar .menu {
@@ -226,8 +223,21 @@ a:active {
     padding: 1.5rem 2rem;
     margin: 0 4rem;
 }
-#mobile {
+.mobile {
+    width: 100%;
     display: none;
+}
+.mobile .card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+.mobile .card-lage {
+    width: 100%;
+    height: 200px;
+}
+.mobile .carousel-item .card {
+    padding: 2rem 1rem;
 }
 .text .title02 {
     font-size: 0.8125rem;

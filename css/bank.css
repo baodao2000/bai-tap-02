@@ -94,14 +94,6 @@ a:active {
     font-size: 2rem;
     color: #F4D58D;
 }
-
-.sidebar-logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    background-color: #001427;
-}
-
 .sidebar .menu {
     height: auto;
     position: fixed;
@@ -116,6 +108,9 @@ a:active {
     z-index: 98;
 }
 
+.sidebar-logo {
+    display: none;
+}
 .menu .logo {
     display: flex;
     flex-direction: row;
@@ -335,4 +330,45 @@ a:active {
 
 .btn-outline-primary:hover {
     background-color: #001427;
+}
+.footer {
+    background-color: #1C2A3D;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+    height: 100%;
+}
+.footer-menu {
+    padding-top: 2rem;
+}
+
+.footer-menu li {
+    display: inline-block;
+    list-style: none
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #F4D58D;
+    font-weight: 400;
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+.footer-icon img {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.footer-content {
+    width: 24rem;
+    margin-top: 2rem;
+}
+.footer-content .title02{
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center; 
 }

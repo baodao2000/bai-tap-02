@@ -83,10 +83,7 @@ a:active {
 }
 
 .sidebar-logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    background-color: #001427;
+    display: none;
 }
 
 .sidebar .menu {

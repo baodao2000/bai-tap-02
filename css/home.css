@@ -94,10 +94,7 @@ a:active {
 }
 
 .sidebar-logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    background-color: #001427;
+    display: none;
 }
 
 .sidebar .menu {
@@ -178,7 +175,7 @@ a:active {
     font-size: 25px;
     cursor: pointer;
     margin-top: 25px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #001427;
     color: #F4D58D;
     position: fixed;
     z-index: 99;
@@ -206,6 +203,7 @@ a:active {
     padding-left: 3rem;
     padding-right: 3rem;
     padding-bottom: 6.5rem;
+    width: 100%;
 }
 
 .carousel-item .card {

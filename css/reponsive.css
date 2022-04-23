@@ -26,7 +26,162 @@
     }
 
 }
+@media all and (max-width: 768px) {
+    * {
+        font-family: "Montserrat", sans-serif;
+        box-sizing: border-box;
+        font-size: 12px;
+    }
 
+    @font-face {
+        font-family: "UTM Davida";
+        font-weight: 400;
+        src: url(../font/00074-UTM-Davida.ttf) format('truetype'),
+            url(../font/00074-UTM-Davida.ttf) format('opentype');
+    }
+
+    @font-face {
+        font-family: "SVN aptima";
+        font-weight: 400;
+        src: url(../font/SVN-Aptima.ttf) format('truetype'),
+            url(../font/SVN-Aptima.ttf) format('opentype');
+    }
+    .navbar {
+        grid-template-columns: 2fr 5fr 1fr;
+    }
+    .container-lage {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 12rem;
+    }
+    .container-lage-contact {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 12rem;
+    }
+    .header {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .header-right {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+    .elipse {
+        right: 22rem;
+    }
+    .container-lage h2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 2.5rem;
+        margin-top: 3rem;
+    }
+    .member-list {
+        display: flex;
+        flex-direction: column;
+        padding: 0 3rem;
+    }
+    .container-left {
+        padding: 0;
+    }
+    .container-left img {
+        display: none;
+    }
+    .container-right {
+        padding: 0;
+        margin-top: 3rem;
+    }
+    .all-items {
+        display: flex;
+        flex-direction: column;
+    }
+    .bi {
+        font-size: 16px;
+    }
+    .list-group {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .all-items {
+        margin-top: 2rem;
+    }
+    .details .body01 {
+        font-size: 14px;
+    }
+    .carousel-item .card .text {
+        padding-right: 8rem;
+    }
+
+    .carousel-indicators {
+        top: 28rem;
+    }
+
+    .small-button .btn-outline-primary {
+        font-size: 1rem;
+        border-width: 1px;
+        padding: 0.375rem 0.75rem;
+    }
+    .content .text {
+        text-align: justify;
+        margin-top: 2rem;
+    }
+
+    .content-img img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .content .buttons-group {
+        justify-content: left;
+    }
+    .showall01 .text {
+        margin-top: 2rem;
+    }
+    .hidden {
+        bottom: 0;
+    }
+    .content02 .text {
+        text-align: justify;
+    }
+
+    .content02 .buttons-group {
+        justify-content: left;
+    }
+    .footer-menu a {
+        font-size: 1rem;
+    }
+    .swiper-slide img {
+        display: block;
+        width: 60%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .sidebar-menu .open2 i {
+        margin-top: 100px;
+    }
+    .sidebar-menu .menu2 {
+        margin-top: 70px;
+    }
+    .sidebar-menu .open2 {
+        display: block;
+    }
+    .swiper-pagination {
+        display: none;
+    }
+    .table {
+        width: 100%;
+    }
+
+}
 @media screen and (max-width: 375px) {
     * {
         font-family: "Montserrat", sans-serif;
@@ -47,17 +202,33 @@
         src: url(../font/SVN-Aptima.ttf) format('truetype'),
             url(../font/SVN-Aptima.ttf) format('opentype');
     }
-
-    .navbar-logo {
-        padding-right: 2rem;
-        padding-top: 12px;
-        z-index: 99;
-        display: flex;
-        justify-content: flex-end;
-        background-color: #001427;
-        position: fixed;
+    .mobile {
+        display: block;
     }
-
+    .mobile .carousel-item .card .text {
+        padding: 0 1rem;
+    }
+    .non-mobile {
+        display: none;
+    }
+    .sidebar-logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 2rem 0 2rem;
+        position: fixed;
+        right: 0;
+        background-color: #001427;
+        width: 100%;
+        z-index: 97;
+    }
+    .sidebar-logo img {
+        width: 100%;
+        height: auto;
+    }
+    .name {
+        padding: 0;
+    }
     .navbar {
         display: none;
     }
@@ -71,14 +242,28 @@
         flex-direction: column;
         padding-left: 2rem;
         padding-right: 2rem;
+        padding-top: 12rem;
+    }
+    .container-lage-contact {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 12rem;
     }
     .header {
         display: flex;
         flex-direction: column-reverse;
         text-align: center;
     }
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
     .header-right {
         display: flex;
+        flex-direction: column;
         justify-content:center;
     }
     .elipse {
@@ -205,5 +390,34 @@
         width: 60%;
         height: 100%;
         object-fit: cover;
+    }
+    .sidebar-menu .open2 i {
+        margin-top: 100px;
+    }
+    .sidebar-menu .menu2 {
+        margin-top: 70px;
+    }
+    .sidebar-menu .open2-mobile i {
+        display: block;
+    }
+    .sidebar-menu .open2 {
+        display: none;
+    }
+    .swiper-pagination {
+        display: none;
+    }
+    .table {
+        width: 100%;
+    }
+    .payment {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .total {
+        margin-left: 0;
+    }
+    .payment-right {
+        padding: 0;
     }
 }
