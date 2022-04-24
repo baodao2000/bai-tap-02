@@ -465,7 +465,10 @@ a:active {
     height: 100%;
     object-fit: cover;
 }
-
+.btn-outline-primary:hover {
+    background-color: #001427;
+    color: #708D81;
+}
 :root {
     --swiper-navigation-size: 2.5rem;
     --swiper-theme-color: #F4D58D;
