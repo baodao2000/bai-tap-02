@@ -45,6 +45,7 @@ a:active {
     padding-left: 3rem;
     align-items: center;
     z-index: 3;
+    width: 100%;
 }
 
 .navbar-logo {
@@ -164,7 +165,7 @@ a:active {
     font-size: 25px;
     cursor: pointer;
     margin-top: 25px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #001427;
     color: #F4D58D;
     position: fixed;
     z-index: 99;
@@ -183,7 +184,7 @@ a:active {
     position: fixed;
     top: 0;
 }
-.container-lage {
+.container-lage-items {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: max-content;
@@ -286,4 +287,5 @@ a:active {
 }
 .btn-outline-primary:hover {
     background-color: #001427;
+    color: #708D81;
 }

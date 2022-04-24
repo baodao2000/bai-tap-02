@@ -157,18 +157,21 @@ a:active {
     font-weight: bold;
     font-size: 2rem;
 }
+
 .sidebar #open {
     display: none;
 }
+
 .sidebar label {
     display: block;
 }
+
 .sidebar .open i {
     display: none;
     font-size: 25px;
     cursor: pointer;
     margin-top: 25px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #001427;
     color: #F4D58D;
     position: fixed;
     z-index: 99;
@@ -176,8 +179,6 @@ a:active {
     left: 0;
     left: 1.5rem;
 }
-
-
 
 #open:checked~.menu {
     transition: 0.5s;

@@ -269,7 +269,7 @@ a:active {
 }
 
 .carousel-indicators {
-    top: 26rem;
+    bottom: -50px;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -378,7 +378,7 @@ a:active {
 .items {
     display: flex;
     flex-direction: row;
-    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 .items-body {
     padding-top: 1rem;
@@ -430,3 +430,46 @@ a:active {
     color: #fff;
     text-align: center; 
 }
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    font-size: 18px;
+    background: #001427;
+
+    /* Center slide text vertically */
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-pagination-bullet {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    opacity: 1;
+    background: #708D81;
+  }
+
+  .swiper-pagination-bullet-active {
+    color: #fff;
+    background: #001427;
+    border: 1px solid #F4D58D;
+  }

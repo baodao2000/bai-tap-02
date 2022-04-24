@@ -54,6 +54,13 @@
         padding-right: 2rem;
         padding-top: 12rem;
     }
+    .container-lage-items {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 12rem;
+        display: flex;
+        justify-content: center;
+    }
     .container-lage-contact {
         display: flex;
         flex-direction: column-reverse;
@@ -120,11 +127,6 @@
     .carousel-item .card .text {
         padding-right: 8rem;
     }
-
-    .carousel-indicators {
-        top: 28rem;
-    }
-
     .small-button .btn-outline-primary {
         font-size: 1rem;
         border-width: 1px;
@@ -319,11 +321,6 @@
     .carousel-item .card .text {
         padding: 0 6rem;
     }
-
-    .carousel-indicators {
-        top: 43rem;
-    }
-
     .small-button .btn-outline-primary {
         font-size: 1rem;
         border-width: 1px;

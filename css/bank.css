@@ -58,6 +58,7 @@ a:active {
     padding-left: 3rem;
     align-items: center;
     z-index: 3;
+    width: 100%;
 }
 
 .navbar-logo {
@@ -94,6 +95,11 @@ a:active {
     font-size: 2rem;
     color: #F4D58D;
 }
+
+.sidebar-logo {
+    display: none;
+}
+
 .sidebar .menu {
     height: auto;
     position: fixed;
@@ -108,9 +114,6 @@ a:active {
     z-index: 98;
 }
 
-.sidebar-logo {
-    display: none;
-}
 .menu .logo {
     display: flex;
     flex-direction: row;
@@ -175,7 +178,7 @@ a:active {
     font-size: 25px;
     cursor: pointer;
     margin-top: 25px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #001427;
     color: #F4D58D;
     position: fixed;
     z-index: 99;
