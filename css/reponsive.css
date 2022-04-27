@@ -167,12 +167,6 @@
         height: 100%;
         object-fit: cover;
     }
-    .sidebar-menu .open2 i {
-        margin-top: 100px;
-    }
-    .sidebar-menu .menu2 {
-        margin-top: 70px;
-    }
     .sidebar-menu .open2 {
         display: block;
     }
@@ -416,5 +410,11 @@
     }
     .payment-right {
         padding: 0;
+    }
+    .description {
+        padding-left: 0;
+    }
+    .info {
+        padding-left: 0;
     }
 }

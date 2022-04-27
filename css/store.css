@@ -16,9 +16,9 @@
     src: url(../font/SVN-Aptima.ttf) format('truetype'),
         url(../font/SVN-Aptima.ttf) format('opentype');
 }
+
 a {
     list-style: none;
-    color: #fff;
     text-decoration: none;
     display: block;
     padding: 0.5rem 0;
@@ -164,7 +164,7 @@ a:active {
     font-size: 25px;
     cursor: pointer;
     margin-top: 25px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #001427;
     color: #F4D58D;
     position: fixed;
     z-index: 99;
@@ -183,6 +183,7 @@ a:active {
     position: fixed;
     top: 0;
 }
+
 .container-lage {
     height: max-content;
     position: relative;
@@ -192,47 +193,56 @@ a:active {
     padding-right: 3rem;
     padding-bottom: 6.5rem;
 }
+
 .header-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-left: 6rem;
     padding-right: 2rem
 }
+
 .list-img {
     display: flex;
     flex-direction: row;
 }
+
 .list-img img {
     width: 25%;
     height: 100%;
     object-fit: cover;
 }
+
 .header-right .title {
     font-size: 2.5rem;
     font-weight: 700;
     color: #fff;
 }
+
 .header-right .details {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
 .details .body01 {
     color: #fff;
-    font-size:1.5rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
+
 .body02 {
     color: #fff;
-    font-size:1.5rem;
+    font-size: 1.5rem;
     font-weight: 200;
-    text-align:left;
+    text-align: left;
 }
+
 .price {
     padding-top: 1rem;
     border-top: 1px solid #F4D58D;
     border-bottom: 1px solid #F4D58D;
 }
+
 .buy {
     margin-top: 2rem;
     display: flex;
@@ -240,11 +250,13 @@ a:active {
     align-items: center;
     column-gap: 4rem;
 }
+
 .quantity {
     display: flex;
     flex-direction: row;
     align-items: baseline;
 }
+
 .button-quantity {
     background-color: #F4D58D;
     padding: 0.25rem;
@@ -252,6 +264,7 @@ a:active {
     height: 28px;
     padding: 0;
 }
+
 .quantity input {
     width: 38px;
     height: 38px;
@@ -260,52 +273,63 @@ a:active {
     color: #FFFFFF;
     margin: 0 0.5rem;
 }
+
 .icon-group {
     display: flex;
     flex-direction: row;
     column-gap: 1rem;
 }
+
 .evaluate {
     display: flex;
     flex-direction: row;
     column-gap: 4rem;
 }
+
 .evaluate i {
     font-size: 1.5rem;
     color: #F4D58D;
     padding: 0 0.2rem;
 }
+
 .description {
     margin-top: 2rem;
     padding-left: 4rem;
 }
+
 .title01 {
     font-size: 2.5rem;
     font-weight: 700;
     color: #fff;
 }
+
 .description .content-description {
     background-color: rgba(109, 5, 0, 1);
     padding: 1rem 3rem;
 }
+
 .info {
     padding-left: 4rem;
 }
+
 .table {
     width: 50%;
 }
+
 .table th {
     color: #fff;
     font-size: 1.5rem;
     font-weight: 300;
     padding-left: 2rem;
 }
+
 .table td {
     color: #fff;
     font-size: 1.5rem;
     font-weight: 500;
     padding-left: 2rem;
 }
+
 .carousel-item .card {
     flex-direction: row;
     align-items: center;
@@ -365,11 +389,13 @@ a:active {
     position: relative;
     padding-left: 4rem;
 }
+
 .content .title01 {
     color: #F4D58D;
     font-size: 2.5rem;
     font-weight: 700;
 }
+
 .footer {
     background-color: #1C2A3D;
     padding-top: 5rem;
@@ -378,6 +404,7 @@ a:active {
     align-items: center;
     padding-bottom: 1rem;
 }
+
 .footer-menu {
     padding-top: 2rem;
 }
@@ -396,50 +423,58 @@ a:active {
     padding-right: 1rem;
     text-align: center;
 }
+
 .footer-icon img {
     margin-left: 1rem;
     margin-right: 1rem;
 }
+
 .footer-content {
     width: 24rem;
     margin-top: 2rem;
 }
-.footer-content .title02{
+
+.footer-content .title02 {
     font-size: 0.8125rem;
     font-weight: 500;
     color: #fff;
-    text-align: center; 
+    text-align: center;
 }
+
 .showall01 {
     padding-top: 4rem;
     padding-bottom: 4rem;
-    background-color:#6D0500;
+    background-color: #6D0500;
     display: flex;
     flex-direction: row;
     align-items: center;
     column-gap: 4rem;
     padding-right: 6rem;
 }
+
 .showall01 .text {
     text-align: left;
 }
+
 .showall02 {
     position: relative;
     padding-top: 4rem;
     padding-bottom: 4rem;
-    background-color:#6D0500;
+    background-color: #6D0500;
     display: flex;
     flex-direction: row;
     align-items: center;
     column-gap: 4rem;
     padding-left: 6rem;
 }
+
 .hidden {
     position: absolute;
     bottom: 2rem;
     background-color: #6D0500;
     border: 0;
 }
+
 .swiper {
     padding-top: 2rem;
     width: 100%;
@@ -483,8 +518,27 @@ a:active {
     height: 100%;
     object-fit: cover;
 }
+
 .swiper-price {
     color: #F4D58D;
     font-size: 1.5rem;
     font-weight: 700;
+}
+
+.swiper .title01 {
+    color: #F4D58D;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: left;
+}
+.link-top {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: row;
+}
+.link-top a {
+    color: #F4D58D;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-right: 1rem;
 }
