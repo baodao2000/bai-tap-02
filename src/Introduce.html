@@ -24,6 +24,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Team Members page</title>
     <link rel="stylesheet" href="../css/Introduce.css">
     <link rel="stylesheet" href="../css/reponsive.css">
@@ -50,12 +52,12 @@
             </ul>
         </div>
         <div class="navbar-cart">
-            <div class="user">
+            <a href="../src/information.html" class="user">
                 <i class="bi bi-person-circle"></i>
-            </div>
-            <div class="cart">
+            </a>
+            <a href="../src/cart.html" class="cart">
                 <i class="bi bi-cart3"></i>
-            </div>
+            </a>
         </div>
     </div>
     <div class="sidebar">
@@ -89,7 +91,7 @@
     </div>
     <div class="container-lage">
         <header class="header">
-            <div class="header-left">
+            <div class="header-left" data-aos="flip-left">
                 <h2>
                     Về chúng tôi
                 </h2>
@@ -175,5 +177,8 @@
         </div>
     </footer>
 </body>
+<script>
+    AOS.init();
+</script>
 
 </html>

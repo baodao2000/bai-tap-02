@@ -27,8 +27,10 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Home page</title>
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/reponsive.css">
@@ -59,7 +61,7 @@
                 <a href="../src/information.html" class="user">
                     <i class="bi bi-person-circle"></i>
                 </a>
-                <a href="../src/products.html" class="cart">
+                <a href="../src/cart.html" class="cart">
                     <i class="bi bi-cart3"></i>
                 </a>
             </div>
@@ -218,27 +220,30 @@
             </div>
         </header>
     </div>
-    <div class="content">
-        <div class="text">
-            <p class="title01">nguồn gốc</p>
-            <P class="title02">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
-                a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of
-                the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-                since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                specimen book</P>
-            <div class="buttons-group">
-                <div class="small-button">
-                    <a class="btn btn-outline-primary" type="button" id="show">
-                        XEM THÊM
-                    </a>
+    <div data-aos="fade-up">
+        <div class="content">
+            <div class="text">
+                <p class="title01">nguồn gốc</p>
+                <P class="title02">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                    a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of
+                    the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                    specimen book</P>
+                <div class="buttons-group">
+                    <div class="small-button">
+                        <a class="btn btn-outline-primary" type="button" id="show">
+                            XEM THÊM
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="content-img">
-            <img src="../image/quino-al-vBxlL1xpSdc-unsplash 1.png">
+            <div class="content-img">
+                <img src="../image/quino-al-vBxlL1xpSdc-unsplash 1.png">
+            </div>
         </div>
     </div>
+
     <div id="showall">
         <div class="showall01">
             <div class="content-img">
@@ -282,7 +287,7 @@
             </button>
         </div>
     </div>
-    <div class="content02">
+    <div class="content02" >
         <div class="content-img">
             <img src="../image/Background.png">
         </div>
@@ -397,6 +402,18 @@
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
+    });
+</script>
+<script>
+    AOS.init({
+        disable: 'mobile'
+    });
+    AOS.init({
+        offset: 200,
+        duration: 1000,
+        delay: 100,
+        once: false,
+        mirror: false,
     });
 </script>
 

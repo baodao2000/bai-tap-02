@@ -314,6 +314,7 @@ a:active {
     flex-direction: row;
     align-items: center;
     column-gap: 4rem;
+    width: 100%;
 }
 
 .content02 .text {
@@ -466,8 +467,8 @@ a:active {
     object-fit: cover;
 }
 .btn-outline-primary:hover {
-    background-color: #001427;
-    color: #708D81;
+    background-color: transparent;
+    color: #F4D58D;
 }
 :root {
     --swiper-navigation-size: 2.5rem;

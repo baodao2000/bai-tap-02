@@ -189,7 +189,7 @@ a:active {
     display: grid;
     height: max-content;
     background-color: #001427;
-    padding-top: 6.5rem;
+    padding-top: 10.5rem;
     padding-left: 3rem;
     padding-right: 3rem;
     padding-bottom: 6.5rem;;
@@ -314,5 +314,6 @@ a:active {
     padding: 0.375rem 2rem;
 }
 .btn-outline-primary:hover {
-    background-color: #F4D58D;
+    color: #708D81;
+    background-color: transparent;
 }
