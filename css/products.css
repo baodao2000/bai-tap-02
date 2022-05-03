@@ -511,3 +511,6 @@ a:active {
     height: 100%;
     object-fit: cover;
 }
+.card-items img:hover {
+    transform: scale(1.2);
+}

@@ -545,6 +545,10 @@ a:active {
     padding-right: 1rem;
 }
 
-.img-fluid:hover {
+.header-left .img-fluid:hover {
+    transform: scale(1.2);
+}
+
+.card-items img:hover {
     transform: scale(1.2);
 }
