@@ -178,7 +178,7 @@
     }
 
 }
-@media screen and (max-width: 375px) {
+@media  screen and (min-width: 375px) and (max-width: 600px) {
     * {
         font-family: "Montserrat", sans-serif;
         box-sizing: border-box;
@@ -211,7 +211,6 @@
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        padding: 2rem 0 2rem;
         position: fixed;
         right: 0;
         background-color: #001427;
@@ -221,9 +220,6 @@
     .sidebar-logo img {
         width: 100%;
         height: auto;
-    }
-    .name {
-        padding: 0;
     }
     .navbar {
         display: none;
