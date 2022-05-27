@@ -159,18 +159,19 @@ a:active {
     display: block;
 }
 
-.sidebar .open i {
+ .sidebar .open i {
     display: none;
-    font-size: 25px;
+    font-size: 35px;
     cursor: pointer;
-    margin-top: 25px;
-    background-color: #001427;
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
     color: #F4D58D;
     position: fixed;
     z-index: 99;
     top: 0;
     left: 0;
     left: 1.5rem;
+    margin-left: 20px;
 }
 
 #open:checked~.menu {
@@ -257,12 +258,24 @@ a:active {
     align-items: baseline;
 }
 
-.button-quantity {
+.add {
     background-color: #F4D58D;
     padding: 0.25rem;
     width: 28px;
     height: 28px;
     padding: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.subtract {
+    background-color: #F4D58D;
+    padding: 0.25rem;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .quantity input {
@@ -272,6 +285,11 @@ a:active {
     background-color: #001427;
     color: #FFFFFF;
     margin: 0 0.5rem;
+    font-size: 2rem;
+}
+
+.counter {
+    text-align: center;
 }
 
 .icon-group {
@@ -284,12 +302,60 @@ a:active {
     display: flex;
     flex-direction: row;
     column-gap: 4rem;
+    align-items: baseline;
 }
 
 .evaluate i {
     font-size: 1.5rem;
     color: #F4D58D;
     padding: 0 0.2rem;
+}
+
+.rate{
+
+	border-bottom-right-radius: 12px;
+	border-bottom-left-radius: 12px;
+
+}
+
+
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center
+}
+
+.rating>input {
+    display: none
+}
+
+.rating>label {
+    position: relative;
+    width: 1em;
+    font-size: 42px;
+    font-weight: 300;
+    color: #F4D58D;
+    cursor: pointer
+}
+
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+    opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4
 }
 
 .description {
@@ -351,7 +417,7 @@ a:active {
 }
 
 .text .title02 {
-    font-size: 0.8125rem;
+    font-size: 1rem;
     font-weight: 500;
     color: #fff;
 }

@@ -46,6 +46,9 @@
         src: url(../font/SVN-Aptima.ttf) format('truetype'),
             url(../font/SVN-Aptima.ttf) format('opentype');
     }
+    .text .title02{
+        font-size: 1.5rem;
+    }
     .navbar {
         grid-template-columns: 2fr 5fr 1fr;
     }
@@ -198,6 +201,9 @@
         src: url(../font/SVN-Aptima.ttf) format('truetype'),
             url(../font/SVN-Aptima.ttf) format('opentype');
     }
+    .text .title02 {
+        font-size: 1.5rem;
+    }
     .mobile {
         display: block;
     }
@@ -216,6 +222,7 @@
         background-color: #001427;
         width: 100%;
         z-index: 97;
+        padding: 3rem;
     }
     .sidebar-logo img {
         width: 100%;

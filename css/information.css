@@ -167,9 +167,9 @@ a:active {
 
 .sidebar .open i {
     display: none;
-    font-size: 25px;
+    font-size: 35px;
     cursor: pointer;
-    margin-top: 25px;
+    margin-top: 40px;
     background-color: rgba(255, 255, 255, 0.2);
     color: #F4D58D;
     position: fixed;
@@ -177,6 +177,7 @@ a:active {
     top: 0;
     left: 0;
     left: 1.5rem;
+    margin-left: 20px;
 }
 
 #open:checked~.menu {
@@ -294,5 +295,6 @@ a:active {
     padding: 0.375rem 2rem;
 }
 .btn-outline-primary:hover {
-    background-color: #001427;
+    background-color: #F4D58D;
+    color: #708D81;
 }

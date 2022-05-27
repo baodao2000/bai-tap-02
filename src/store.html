@@ -130,9 +130,9 @@
                         <div class="quantity">
                             <p class="body02">số lượng:
                             </p>
-                            <button class="button-quantity">+</button>
-                            <input type="text">
-                            <button class="button-quantity">-</button>
+                            <button class="subtract">-</button>
+                            <input class="counter" id='quantity' min='1' name='quantity' type='text' value='1'>
+                            <button class="add">+</button>
                         </div>
                         <div class="icon-group">
                             <a href="#"><img src="../image/icon (4).png" style="width: 38px;height: 38px"></a>
@@ -141,16 +141,17 @@
                     </div>
                     <div class="evaluate">
                         <p class="body02">Đánh giá:</p>
-                        <div class="star">
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
-                            <i class="bi bi-star"></i>
+                        <div class="rate">
+                            <div class="rating"> <input type="radio" name="rating" value="5" id="5"><label
+                                    for="5">☆</label> <input type="radio" name="rating" value="4" id="4"><label
+                                    for="4">☆</label> <input type="radio" name="rating" value="3" id="3"><label
+                                    for="3">☆</label> <input type="radio" name="rating" value="2" id="2"><label
+                                    for="2">☆</label> <input type="radio" name="rating" value="1" id="1"><label
+                                    for="1">☆</label>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </header>
         <div class="description">
             <p class="title01">MÔ TẢ SẢN PHẨM</p>
@@ -396,6 +397,18 @@
             prevEl: ".swiper-button-prev",
         },
     });
+</script>
+<script>
+    var $add = document.querySelector('.add');
+    var $subtract = document.querySelector('.subtract');
+    var $counter = document.querySelector('.counter');
+
+    $add.addEventListener('click', function () {
+        $counter.value = parseInt($counter.value) + 1;
+    }, false);
+    $subtract.addEventListener('click', function () {
+        $counter.value = parseInt($counter.value) - 1;
+    }, false);
 </script>
 
 </html>
